@@ -8,7 +8,7 @@ TEMP_DIR = tempfile.gettempdir()
 DB_PATH = os.path.join(TEMP_DIR, "expenses.db")
 CATEGORIES_PATH = os.path.join(os.path.dirname(__file__), "categories.json")
 
-mcp = FastMCP("ExpenseTracker")
+mcp = FastMCP("ExpenseTrackerRemote")
 
 def init_db():
     import sqlite3
